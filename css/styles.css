@@ -1,124 +1,69 @@
-/*header*/
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-#container {
-    margin: 0 5px;
+.responsive-img {
+	max-width: 100%;
+	height: auto;
 }
 
-header {
-    display: flex;
-    /* border: 1px solid red; */
-    padding: .2em;
-    font-family: 'Open Sans', sans-serif;
+.text-header {
+	font-size: 6vw;
 }
 
-.logo {
-    /* border: 1px solid red; */
-    width: 25%;
-    padding: .2em;
-    margin-top: auto;
-    margin-bottom: auto;
+.text-item {
+	font-size: 4vw;
 }
 
-.logo-img {
-    /* border: 1px solid red; */
+.header {
+	text-align: center;
+	margin-bottom: 30px;
+	font-family: 'Open Sans', sans-serif;
 }
 
-
-/* header-tiles */
-
-.header-titles {
-    width: 75%;
-    padding: .2em;
-    /* border: 1px solid red; */
+.content-header, .featured-item {
+	text-align: center;
 }
 
-.header-titles h1 {
-    text-align: right;
-    font-size: 20px;
+.featured-work {
+	margin-top: 30px;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Merriweather', serif;
 }
 
-.header-titles p {
-    text-align: right;
+.featured-item {
+	margin: 20px 0;
 }
 
-
-/* hero section */
-
-.hero-image {
-    height: auto;
-    width: 100%;
 }
 
-.description,
-section {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Merriweather', serif;
+@media screen and (min-width: 460px) {
+	.text-header {
+		font-size: 5vw;
+	}
+
+	.text-item {
+		font-size: 3vw;
+	}
+
+	.featured-img {
+		width: 100%;
+	}
+
 }
 
+@media screen and (min-width: 820px) {
+	.featured {
+		display: flex;
+	}
 
-/* .row {
-    display: flex;
-} */
+	.featured-item {
+		margin: 20px 20px 20px 0;
+	}
+	.featured-item: last-child {
+		margin-right: 0;
+	}
 
-
-/* featured work */
-
-section {
-    /* display: flex; */
 }
-
-
-/* .column {
-    flex: 33.3%;
-    padding: 5px;
-} */
-
-.work {
-    padding: .333em;
-    /* width: 33.3333%; */
-}
-
-.work p {
-    text-align: center;
-    font-size: 10px;
-}
-
-.work img {
-    width: 100%;
-}
-
-
-/* for screens larger than... some styles and (section display flex)*/
-
-@media screen and (min-width: 500px) {
-    body {
-        background: lavender;
-    }
-    section {
-        display: flex;
-    }
-    .work {
-        width: 33.3333%;
-    }
-}
-
-@media screen and (min-width: 750px) {
-    .work p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .work p {
-        font-size: 18px;
-    }
-}
-
-
-/*end*
